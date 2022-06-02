@@ -14,16 +14,17 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: 54px;
-  font-width: 600px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
   color: ${(props) => props.theme.primary};
   padding-bottom: 50px;
   text-align: center;
-
   max-width: 500px;
 `;
 
 export const SubTitle = styled.p`
-  font-size: 24px;
+  font-size: 30px;
+  font-family: 'Square Peg', cursive;
   color: ${(props) => props.theme.text};
   padding-bottom: 50px;
   text-align: center;

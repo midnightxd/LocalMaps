@@ -19,8 +19,8 @@ export default function Home() {
 
         <Link to="/new">
           <Button>
-            <ButtonBox>{"o"}</ButtonBox>
-            Cadastre um ponto comercial
+            <ButtonBox>{"➤"}</ButtonBox>
+            Register a commercial point
           </Button>
         </Link>
       </LeftContainer>

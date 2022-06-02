@@ -137,7 +137,7 @@ export default function New() {
         </CategoryContainer>
 
         <ButtonContainer>
-          <Button type="submit">Save Location</Button>
+          <Button type="submit">Save Location ♥</Button>
         </ButtonContainer>
       </Form>
     </Container>

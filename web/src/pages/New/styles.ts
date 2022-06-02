@@ -13,7 +13,8 @@ export const Form = styled.form`
   width: 40vw;
   background: ${(props) => props.theme.bg};
   padding: 50px;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
 
   @media (max-width: 1024px) {
@@ -51,8 +52,11 @@ export const CategoryContainer = styled.div`
 export const CategoryBox = styled.div<{ isActive: boolean }>`
   background-color: ${(props) =>
     props.isActive ? props.theme.white : props.theme.background};
+  
+  color: ${(props) => props.theme.text};
 
   border-radius: 8px;
+  border: 1px solid ${(props) => props.theme.background};
   width: 100px;
   height: 100px;
 
@@ -66,7 +70,8 @@ export const CategoryBox = styled.div<{ isActive: boolean }>`
   cursor: pointer;
   transition: 400ms;
   &:hover {
-    background: ${(props) => props.theme.bgHover}
+    background: ${(props) => props.theme.bgHover};
+    border: 1px solid ${(props) => props.theme.primary};
   }
 `;
 
