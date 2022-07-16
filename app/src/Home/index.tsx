@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     color: "#6c6c80",
   },
   selectedCategory: {
-    backgroundColor: "#FF0000",
+    backgroundColor: "#fff",
     borderWidth: 1,
     borderColor: "#322153",
   },

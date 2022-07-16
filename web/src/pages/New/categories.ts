@@ -3,7 +3,7 @@ export const categories = [
   { key: "gas", label: "Combustível", url: "media/gas.png" },
   {
     key: "hospital",
-    label: "Farmácia",
+    label: "Farmácia/Hospital",
     url: "media/hospital.png",
   },
   { key: "pet", label: "Pet Shop", url: "media/pet.png" },

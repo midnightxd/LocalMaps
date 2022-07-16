@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <Container>
       <LeftContainer>
-        <Title>The local trade map</Title>
-        <SubTitle>Find everything you need at local shops!</SubTitle>
+        <Title>O mapa local de sua cidade</Title>
+        <SubTitle>Encontre no comércio local tudo o que precisa!</SubTitle>
 
         <Link to="/new">
           <Button>
-            <ButtonBox>{"➤"}</ButtonBox>
-            Register a commercial point
+            <ButtonBox>{">"}</ButtonBox>
+            Cadastre um ponto comercial
           </Button>
         </Link>
       </LeftContainer>

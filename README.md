@@ -1,5 +1,3 @@
-# Local comerce
-![Screnshot](1.png)
-![Screnshot](2.png)
+# Local Maps
 
 Full stack application used to teach developers how to develop an application with NodeJS, React and React native

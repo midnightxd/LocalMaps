@@ -53,7 +53,7 @@ export default function New() {
   }
 
   if (!coords) {
-    return <h1>Get location ...</h1>;
+    return <h1>Obtendo localização ...</h1>;
   }
 
   return (
@@ -69,27 +69,27 @@ export default function New() {
         <Section>Dados</Section>
 
         <Input
-          label="Place name"
+          label="Nome do local"
           name="name"
           value={formValues.name}
           onChange={setFormValues}
         />
 
         <Input
-          label="Description"
+          label="Descrição"
           name="description"
           value={formValues.description}
           onChange={setFormValues}
         />
 
         <Input
-          label="Contact"
+          label="Contato"
           name="contact"
           value={formValues.contact}
           onChange={setFormValues}
         />
 
-        <Section>Adress</Section>
+        <Section>Endereço</Section>
 
         <MapContainer
           center={
@@ -137,7 +137,7 @@ export default function New() {
         </CategoryContainer>
 
         <ButtonContainer>
-          <Button type="submit">Save Location ♥</Button>
+          <Button type="submit">Salvar</Button>
         </ButtonContainer>
       </Form>
     </Container>

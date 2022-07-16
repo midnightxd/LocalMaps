@@ -1,21 +1,20 @@
-import styled from "styled-components";
-import { MapContainer as MapContainerLeaflet } from "react-leaflet";
+import styled from 'styled-components';
+import { MapContainer as MapContainerLeaflet } from 'react-leaflet';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.background};
+  background-color: ${props => props.theme.background_dark};
 `;
 
 export const Form = styled.form`
   width: 40vw;
-  background: ${(props) => props.theme.bg};
+  background-color: ${props => props.theme.background_new};
   padding: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 10px;
+  margin-top: 40px;
+  border-radius: 8px;
 
   @media (max-width: 1024px) {
     width: 70vw;
@@ -23,56 +22,42 @@ export const Form = styled.form`
 `;
 
 export const FormTitle = styled.h2`
-  color: ${(props) => props.theme.primary};
+  color: ${props => props.theme.font_primary};
   font-size: 40px;
-
   padding-bottom: 30px;
 `;
 
 export const MapContainer = styled(MapContainerLeaflet)`
   height: 50vh;
-  border-radius: 10px;
 `;
 
 export const Section = styled.p`
-  color: ${(props) => props.theme.primary};
+  color: ${props => props.theme.background_new};
   font-size: 20px;
   padding-bottom: 30px;
-  padding-top: 10px;
+  padding-top: 30px;
   font-weight: 700;
 `;
 
 export const CategoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
+  color: ${props => props.theme.font_primary};
 `;
 
 export const CategoryBox = styled.div<{ isActive: boolean }>`
-  background-color: ${(props) =>
-    props.isActive ? props.theme.white : props.theme.background};
-  
-  color: ${(props) => props.theme.text};
-
+  background-color: ${props => (props.isActive ? props.theme.font_primary : props.theme.background_dark)};
+  border: ${props => (props.isActive ? `2px solid ${props.theme.background}` : 'none')};
   border-radius: 8px;
-  border: 1px solid ${(props) => props.theme.background};
-  width: 100px;
-  height: 100px;
-
+  width: 160px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 10px;
-
   cursor: pointer;
-  transition: 400ms;
-  &:hover {
-    background: ${(props) => props.theme.bgHover};
-    border: 1px solid ${(props) => props.theme.primary};
-  }
 `;
 
 export const CategoryImage = styled.img`
@@ -86,13 +71,13 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: ${(props) => props.theme.primary};
-  color: ${(props) => props.theme.white};
+  background-color: ${props => props.theme.bg_teal};
+  color: ${props => props.theme.white};
   height: 50px;
   border: none;
   border-radius: 5px;
 
   &:hover {
-    background-color: ${(props) => props.theme.primary}99;
+    background-color: ${props => props.theme.primary}99;
   }
 `;

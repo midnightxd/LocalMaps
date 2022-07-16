@@ -9,9 +9,9 @@ export const Container = styled.div`
 export const InputStyled = styled.input`
   border: none;
   background-color: ${(props) => props.theme.background};
-  color: ${(props) => props.theme.primary};
-  border-radius: 10px;
-  height: 20px;
-  font-size: 20px;
+  color: ${(props) => props.theme.text};
+  border-radius: 8px;
+  height: 28px;
+  font-size: 24px;
   padding: 10px;
 `;
